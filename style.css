@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+:root {
+    --bg: rgb(34, 40, 49);
+    --primary: #1EA3E1;
+    --white: rgb(238, 238, 238);
+    --dark: rgb(57, 62, 70);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+    scroll-padding-top: 106px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+}
+
+/* navabar start */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 7%;
+    border-bottom: 1px solid rgb(46, 53, 65);
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg);
+}
+
+.navbar img {
+    width: 72px;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    color: var(--primary);
+
+}
+
+.menu ul li a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.menu ul li a:hover::after{
+    transform: scaleX(0.5);
+}
+/* navbar end */
+
+/* about me start*/
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 160px 112px 64px 112px;
+    gap: 64px;
+}
+
+.about img {
+    width: 400px;
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.my_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.my_desc h1 span {
+    background: linear-gradient(to right, #6ce6f5 0%, var(--primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+.my_desc p {
+    font-size: 16px;
+    color: rgb(128, 136, 148);
+}
+
+.sosmed {
+    display: flex;
+    gap: 16px;
+}
+
+#github, #instagram, #linkedin, #figmaH, #photoH, #ilustratorH, #premierH, #htmlH, #cssH, #jsH, #tailwindH, #mysqlH {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#githubH, #instagramH, #linkedinH, #figma, #photo, #ilustrator, #premier, #html, #css, #js, #tailwind, #mysql {
+    position: absolute;
+    left: 50%;
+    color: var(--primary);
+    transform: translateX(-50%);
+    top: -32px;
+    background-color: var(--white);
+    padding: 4px 8px;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#githubH::before, #instagramH::before, #linkedinH::before, #figma::before, #photo::before, #ilustrator::before, #premier::before, #html::before, #css::before, #js::before, #tailwind::before, #mysql::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-70%);
+    height: 10px;
+    width: 10px;
+    background-color: var(--white);
+    rotate: 45deg;
+    bottom: -10px;
+}
+
+#github:hover #githubH, #instagram:hover #instagramH, #linkedin:hover #linkedinH, #figmaH:hover #figma, #photoH:hover #photo, #ilustratorH:hover #ilustrator, #premierH:hover #premier, #htmlH:hover #html, #cssH:hover #css, #jsH:hover #js, #tailwindH:hover #tailwind, #mysqlH:hover #mysql {
+    visibility: visible;
+    opacity: 1;
+}
+/* about me end*/
+
+/* Skill start*/
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 112px;
+    padding: 40px 40px;
+    gap: 64px;
+    flex-direction: column;
+    background-color: var(--dark);
+    border-radius: 16px;
+}
+
+.design {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.web {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* skill end*/
+
+/* project start*/
+
+/* project end*/
+
+/* footer start*/
+
+/* footer end*/
+
+
+
