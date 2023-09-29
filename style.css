@@ -72,7 +72,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 160px 112px 64px 112px;
+    margin: 160px 112px 80px 112px;
     gap: 64px;
 }
 
@@ -115,14 +115,14 @@ h1 {
     gap: 16px;
 }
 
-#github, #instagram, #linkedin, #figmaH, #photoH, #ilustratorH, #premierH, #htmlH, #cssH, #jsH, #tailwindH, #mysqlH {
+#github, #instagram, #linkedin, #gmail, #figmaH, #photoH, #ilustratorH, #premierH, #htmlH, #cssH, #jsH, #tailwindH, #mysqlH {
     position: relative;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
 }
 
-#githubH, #instagramH, #linkedinH, #figma, #photo, #ilustrator, #premier, #html, #css, #js, #tailwind, #mysql {
+#githubH, #instagramH, #linkedinH, #gmailH, #figma, #photo, #ilustrator, #premier, #html, #css, #js, #tailwind, #mysql {
     position: absolute;
     left: 50%;
     color: var(--primary);
@@ -136,7 +136,7 @@ h1 {
     transition: opacity 0.5s ease;
 }
 
-#githubH::before, #instagramH::before, #linkedinH::before, #figma::before, #photo::before, #ilustrator::before, #premier::before, #html::before, #css::before, #js::before, #tailwind::before, #mysql::before {
+#githubH::before, #instagramH::before, #linkedinH::before, #gmailH::before, #figma::before, #photo::before, #ilustrator::before, #premier::before, #html::before, #css::before, #js::before, #tailwind::before, #mysql::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -148,7 +148,7 @@ h1 {
     bottom: -10px;
 }
 
-#github:hover #githubH, #instagram:hover #instagramH, #linkedin:hover #linkedinH, #figmaH:hover #figma, #photoH:hover #photo, #ilustratorH:hover #ilustrator, #premierH:hover #premier, #htmlH:hover #html, #cssH:hover #css, #jsH:hover #js, #tailwindH:hover #tailwind, #mysqlH:hover #mysql {
+#github:hover #githubH, #instagram:hover #instagramH, #linkedin:hover #linkedinH, #gmail:hover #gmailH, #figmaH:hover #figma, #photoH:hover #photo, #ilustratorH:hover #ilustrator, #premierH:hover #premier, #htmlH:hover #html, #cssH:hover #css, #jsH:hover #js, #tailwindH:hover #tailwind, #mysqlH:hover #mysql {
     visibility: visible;
     opacity: 1;
 }
@@ -161,34 +161,101 @@ h1 {
     justify-content: space-between;
     margin: 40px 112px;
     padding: 40px 40px;
-    gap: 64px;
+    gap: 32px;
     flex-direction: column;
     background-color: var(--dark);
     border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.logoSkill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 56px;
 }
 
 .design {
     display: flex;
+    gap: 112px;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    
 }
 
 .web {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
 }
-
 /* skill end*/
 
 /* project start*/
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 112px 40px 112px;
+    gap: 32px;
+    flex-direction: column;
+}
 
+.project a {
+    padding: 8px 16px;
+    background-color: var(--primary);
+    border-radius: 8px;
+    font-size: 20px;
+    color: var(--dark);
+    font-weight: bold;
+    box-shadow: rgba(142, 142, 175, 0.25) 0px 30px 60px -12px inset, rgba(155, 153, 153, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.project a:hover {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.pjct {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pjct img{
+    width: 300px;
+    height: 200px;
+    border-radius: 8px  8px 0px 0px;
+}
+
+.pjct a {
+    font-size: 16px;
+    
+}
+
+.pjct1, .pjct2, .pjct3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-direction: column;
+    padding: 0 0 16px 0;
+    border-radius: 8px;
+    background-color: var(--dark);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
 /* project end*/
 
 /* footer start*/
-
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
 /* footer end*/
 
 
